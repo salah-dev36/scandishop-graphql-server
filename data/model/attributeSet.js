@@ -34,8 +34,8 @@ const colorsList = {
   ShockBlue: "#5377B7",
 };
 
-const shoeSize = (sizeArray) => {
-  const items = sizeArray.map((item) => ({
+const shoeSize = (...arguments) => {
+  const items = Object.values(arguments).map((item) => ({
     displayValue: item,
     value: item,
     id: item,
@@ -51,8 +51,9 @@ const shoeSize = (sizeArray) => {
   return result;
 };
 
-const clotheSize = (sizeArray) => {
-  const items = sizeArray.map((item) => ({
+const clotheSize = (...arguments) => {
+
+  const items = Object.values(arguments).map((item) => ({
     displayValue: sizesList[item],
     value: item,
     id: sizesList[item],
@@ -68,8 +69,8 @@ const clotheSize = (sizeArray) => {
   return result;
 };
 
-const colors = (colorsArray) => {
-  const items = colorsArray.map((item) => ({
+const colors = (...arguments) => {
+  const items = Object.values(arguments).map((item) => ({
     displayValue: item,
     value: colorsList[item],
     id: item,
@@ -85,8 +86,8 @@ const colors = (colorsArray) => {
   return result;
 };
 
-const capacity = (capacityArray) => {
-  const items = capacityArray.map((item) => ({
+const capacity = (...arguments) => {
+  const items = Object.values(arguments).map((item) => ({
     displayValue: item,
     value: item,
     id: item,
