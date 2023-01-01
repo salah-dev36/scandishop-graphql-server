@@ -52,7 +52,7 @@ const products = [
     brand: "Nike x Stussy",
   },
   {
-    name: "Mens Gentleman Stainless Steel Dress Watch",
+    name: "Mens Stainless Steel Watch",
     id: "tissot-watch",
     inStock: true,
     gallery: [
