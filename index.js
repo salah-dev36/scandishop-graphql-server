@@ -7,6 +7,6 @@ const server = new ApolloServer({
     resolvers
 })
 
-server.listen({port : process.env.PORT || 4000}).then(({url}) =>{
+server.listen({port : process.env.PORT || 8080}).then(({url}) =>{
     console.log(`API RUNNING at ${url}`)
 })
